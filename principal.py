@@ -6,6 +6,12 @@ from flask_mail import Mail, Message
 from bson.objectid import ObjectId
 
 
+def comprueba_fondo():
+	pass
+
+DOCUMENTOS = ["doc", "docx"]
+
+
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = "./static/fondos"
 EXTENSIONES = ["png", "jpg", "jpeg"]
